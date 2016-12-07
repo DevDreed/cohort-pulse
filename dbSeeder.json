@@ -1,0 +1,56 @@
+{
+    "cohorts": {
+        "cohort0": {
+            "name": "Evening 4",
+            "createdByUid": "pKAVxdXwhnT3pMsfFtWPgDGXXzI3"
+        }
+    },
+    "tracks": {
+        "track1": {
+            "name": "Front End Milestones",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones"
+        }
+    },
+    "milestones": {
+        "milestone0": {
+            "name": "Getting Started",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/1-getting-started",
+            "trackId": "track1"
+        },
+        "milestone1": {
+            "name": "The Static Web",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/2-the-static-web",
+            "trackId": "track1"
+        }
+    },
+    "assignments": {
+        "assignment0": {
+            "milestoneId": "milestone1",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md"
+        }
+    },
+    "studentAssignments": {
+        "studentassignment0": {
+            "assignmentId": "assignment0",
+            "milestoneId": "milestone1",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
+            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
+            "studentRepoLink": "https://github.com/drdreed/articles/",
+            "status": "incomplete"
+        }
+    },
+    "users": {
+        "user0": {
+            "uid": "pKAVxdXwhnT3pMsfFtWPgDGXXzI3",
+            "username": "Dustin Reed",
+            "role": ["admin", "instructor"]
+        },
+        "user1": {
+            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
+            "username": "Dustin Reed Student",
+            "role": ["student"]
+        }
+    }
+}

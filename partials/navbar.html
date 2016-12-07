@@ -1,0 +1,10 @@
+<nav>
+    <div class="nav-wrapper" ng-controller="NavController">
+        <a href="#!" class="brand-logo">Cohort Pulse</a>
+        <ul class="right hide-on-med-and-down" ng-repeat="navItem in navItems" ng-show="user">
+            <li>
+                <a href="{{navItem.url}}">{{navItem.name}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
