@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col s6">
+        <div ng-repeat="cohort in cohorts | filter: searchText">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-xs-11">
+                        <button ng-click="getStudents(cohort.id)">
+                  {{cohort.name}}
+            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <div ng-repeat="cohort in students | filter: searchText">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-xs-11">
+                        <button ng-click="getStudents(cohort.id)">
+                  {{cohort.username}}
+            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
