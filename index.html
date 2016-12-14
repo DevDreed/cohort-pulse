@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8">
         <title>Cohort Pulse</title>
-        <link rel="stylesheet" type="text/css" href="/node_modules/materialize-css/bin/materialize.css">
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
@@ -13,28 +14,27 @@
         <div ng-include="'./partials/navbar.html'"></div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-offset-2 col-xs-8" ng-view></div>
+                <div class="col offset-s2 col s8" ng-view></div>
             </div>
         </div>
 
         <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="/node_modules/materialize-css/bin/materialize.js"></script>
         <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
         <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
         <script type="text/javascript" src="/js/app.js"></script>
         <script type="text/javascript" src="/js/AppConstants.js"></script>
         <script type="text/javascript" src="/js/AppConfig.js"></script>
         <script type="text/javascript" src="/js/factories/AuthFactory.js"></script>
-        <script type="text/javascript" src="/js/factories/CohortFactory.js"></script>
-        <script type="text/javascript" src="/js/factories/StudentDashboardFactory.js"></script>
+        <script type="text/javascript" src="/js/factories/AssignmentFactory.js"></script>
         <script type="text/javascript" src="/js/factories/UserFactory.js"></script>
+        <script type="text/javascript" src="/js/factories/GithubFactory.js"></script>
         <script type="text/javascript" src="/js/controllers/AuthController.js"></script>
         <script type="text/javascript" src="/js/controllers/NavController.js"></script>
-        <script type="text/javascript" src="/js/controllers/CohortDetailsCtrl.js"></script>
-        <script type="text/javascript" src="/js/controllers/CohortEditCtrl.js"></script>
-        <script type="text/javascript" src="/js/controllers/CohortNewCtrl.js"></script>
-        <script type="text/javascript" src="/js/controllers/CohortListCtrl.js"></script>
-        <script type="text/javascript" src="/js/controllers/StudentDashboardCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/DashboardCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/AssignmentEditCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/AssignmentViewCtrl.js"></script>
     </body>
 </html>
