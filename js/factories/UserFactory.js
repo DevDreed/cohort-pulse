@@ -5,7 +5,8 @@ app.factory("UserFactory", ($q, $http, FIREBASE_CONFIG) => {
         return $q((resolve, reject) => {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/users.json`, JSON.stringify({
                 uid: authData.uid,
-                username: authData.username
+                username: authData.username,
+                githubUsername: authData.githubUsername
             })).success(storeUserSuccess => {
                 resolve(storeUserSuccess);
             }).error(storeUserError => {
@@ -16,7 +17,7 @@ app.factory("UserFactory", ($q, $http, FIREBASE_CONFIG) => {
 
     let getUser = (userId) => {
         return $q((resolve, reject) => {
-            $http.get(`${FIREBASE_CONFIG.databaseURL}/users/.json?orderBy="uid"&equalTo="${userId}"`)
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/users.json?orderBy="uid"&equalTo="${userId}"`)
                 .success(userObject => {
                     let users = [];
                     Object.keys(userObject).map(key => {

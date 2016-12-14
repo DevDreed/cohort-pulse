@@ -6,11 +6,8 @@ app.controller("NavController", function ($scope) {
             name: "Logout",
             url: "#/logout"
         }, {
-            name: "All Cohorts",
-            url: "#/cohorts/list"
-        }, {
-            name: "New Cohort",
-            url: "#/cohorts/new"
+            name: "Dashboard",
+            url: "#/dashboard"
         }
     ];
 });

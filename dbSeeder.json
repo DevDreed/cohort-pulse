@@ -1,56 +1,69 @@
 {
-    "cohorts": {
-        "cohort0": {
-            "name": "Evening 4",
-            "createdByUid": "pKAVxdXwhnT3pMsfFtWPgDGXXzI3"
-        }
-    },
-    "tracks": {
-        "track1": {
-            "name": "Front End Milestones",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones"
+    "assignments": {
+        "assignment0": {
+            "milestoneId": "milestone1",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
+            "dueDate": "12/17/2016"
+        },
+        "assignment1": {
+            "milestoneId": "milestone1",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
+            "dueDate": "12/17/2016"
+        },
+        "assignment2": {
+            "milestoneId": "milestone0",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
+            "dueDate": "12/17/2016"
+        },
+        "assignment3": {
+            "milestoneId": "milestone0",
+            "name": "Blog page styling",
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
+            "dueDate": "12/17/2016"
         }
     },
     "milestones": {
         "milestone0": {
             "name": "Getting Started",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/1-getting-started",
-            "trackId": "track1"
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/1-getting-started"
         },
         "milestone1": {
             "name": "The Static Web",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/2-the-static-web",
-            "trackId": "track1"
-        }
-    },
-    "assignments": {
-        "assignment0": {
-            "milestoneId": "milestone1",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md"
+            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/2-the-static-web"
         }
     },
     "studentAssignments": {
         "studentassignment0": {
             "assignmentId": "assignment0",
-            "milestoneId": "milestone1",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
-            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
-            "studentRepoLink": "https://github.com/drdreed/articles/",
-            "status": "incomplete"
+            "status": "incomplete",
+            "repo": "https://api.github.com/repos/drdreed/grades",
+            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2"
+        },
+        "studentassignment1": {
+            "assignmentId": "assignment0",
+            "status": "complete",
+            "repo": "https://api.github.com/repos/drdreed/articles",
+            "uid": "E0A04Y6VVmYntLCuHS9ZzwX48c52"
         }
     },
     "users": {
         "user0": {
+            "role": ["admin", "instructor"],
             "uid": "pKAVxdXwhnT3pMsfFtWPgDGXXzI3",
-            "username": "Dustin Reed",
-            "role": ["admin", "instructor"]
+            "username": "Dustin Reed"
         },
         "user1": {
+            "role": ["student"],
             "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
-            "username": "Dustin Reed Student",
-            "role": ["student"]
+            "username": "Dustin Reed Student"
+        },
+        "user2": {
+            "role": ["student"],
+            "uid": "E0A04Y6VVmYntLCuHS9ZzwX48c52",
+            "username": "Student Student"
         }
     }
 }

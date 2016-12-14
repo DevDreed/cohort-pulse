@@ -30,9 +30,19 @@ app.config($routeProvider => {
             templateUrl: 'partials/auth.html',
             controller: 'AuthCtrl'
         })
-        .when('/cohorts/list', {
-            templateUrl: 'partials/cohort-list.html',
-            controller: 'CohortListCtrl',
+        .when('/dashboard', {
+            templateUrl: 'partials/dashboard.html',
+            controller: 'DashboardCtrl',
+            resolve: {isAuth}
+        })
+        .when('/assignment/edit/:id', {
+            templateUrl: 'partials/assignment-edit.html',
+            controller: 'AssignmentEditCtrl',
+            resolve: {isAuth}
+        })
+        .when('/assignment/view/:id', {
+            templateUrl: 'partials/assignment-view.html',
+            controller: 'AssignmentViewCtrl',
             resolve: {isAuth}
         })
         .when('/logout', {
