@@ -118,6 +118,14 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
         });
     };
 
+    const deleteAssignment = (assignment) => {
+        return $q((resolve, reject) => {
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/studentAssignments/${assignment.id}.json`)
+                .success(getSingleResponse => resolve(getSingleResponse))
+                .error(errorResponse => reject(errorResponse));
+        });
+    };
+
     const getAllStudentsAssignments = (assignmentId) => {
         return $q((resolve, reject) => {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/studentAssignments.json?orderBy="assignmentId"&equalTo="${assignmentId}"`)
@@ -142,6 +150,7 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
         editStudentAssignment: editStudentAssignment,
         getSingleAssignment: getSingleAssignment,
         getAllStudentsAssignments: getAllStudentsAssignments,
-        newStudentAssignment: newStudentAssignment
+        newStudentAssignment: newStudentAssignment,
+        deleteAssignment: deleteAssignment
     };
 });
