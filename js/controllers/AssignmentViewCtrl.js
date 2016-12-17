@@ -52,6 +52,12 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
     });
   };
 
+  $scope.deleteAssignment = () => {
+    AssignmentFactory.deleteAssignment($scope.singleStudentAssignment).then(function (response) {
+      $scope.singleStudentAssignment = {};
+    });
+  };
+
   $scope.saveStudentAssignment = () => {
     let assignment = $scope.singleStudentAssignment;
     assignment.assignmentId = $scope.selectedAssignment.id;

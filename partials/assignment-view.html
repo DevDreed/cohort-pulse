@@ -3,6 +3,7 @@
     <button class="btn btn-info" ng-show="user.role.includes('admin')"><a ng-href="#/assignment/edit/{{selectedAssignment.id}}">Edit</a></button>
     <h4>Due Date: {{selectedAssignment.dueDate | date}}</h4>
     <button class="btn btn-info" ng-hide='edit' ng-click="toggleEdit()">Edit</button>
+    <button class="btn btn-info" ng-hide='edit' ng-click="deleteAssignment(selectedAssignment)">Delete</button>
     <div ng-hide='edit'>Student Repo Link: {{singleStudentAssignment.fullRepo.name}}</div>
     <div ng-show='edit'>Student Repo Link:
         <div input-field>
@@ -21,6 +22,7 @@
         </div>
     </div>
     <button class="btn btn-info" ng-show='edit' ng-click="saveStudentAssignment()">Save</button>
+    <button class="btn btn-info" ng-show='edit' ng-click="toggleEdit()">Cancel</button>
 </div>
 <div class="row" ng-if="user.role.includes('admin')">
     <h3 ng-hide='edit'>Assignment: {{selectedAssignment.name}}</h3>

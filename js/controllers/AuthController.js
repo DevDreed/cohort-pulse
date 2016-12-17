@@ -11,7 +11,7 @@ app.controller("AuthCtrl", function ($scope, $rootScope, $location, AuthFactory,
 
   if($location.path() === "/logout"){
     AuthFactory.logout();
-    $rootScope.user = {};
+    $rootScope.user = null;
     $location.url("/auth");
   }
 
