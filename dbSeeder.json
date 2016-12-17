@@ -1,69 +1,106 @@
 {
-    "assignments": {
-        "assignment0": {
-            "milestoneId": "milestone1",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
-            "dueDate": "12/17/2016"
-        },
-        "assignment1": {
-            "milestoneId": "milestone1",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
-            "dueDate": "12/17/2016"
-        },
-        "assignment2": {
-            "milestoneId": "milestone0",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
-            "dueDate": "12/17/2016"
-        },
-        "assignment3": {
-            "milestoneId": "milestone0",
-            "name": "Blog page styling",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md",
-            "dueDate": "12/17/2016"
-        }
+  "assignments" : {
+    "assignment0" : {
+      "dueDate" : "2016-12-08T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Interactive navigation bar",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_INTERACTIVE_NAVIGATION.md"
     },
-    "milestones": {
-        "milestone0": {
-            "name": "Getting Started",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/1-getting-started"
-        },
-        "milestone1": {
-            "name": "The Static Web",
-            "repoLink": "https://github.com/nashville-software-school/front-end-milestones/tree/master/2-the-static-web"
-        }
+    "assignment1" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "CSS pseudo-class exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_PSEUDOCLASSES.md"
     },
-    "studentAssignments": {
-        "studentassignment0": {
-            "assignmentId": "assignment0",
-            "status": "incomplete",
-            "repo": "https://api.github.com/repos/drdreed/grades",
-            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2"
-        },
-        "studentassignment1": {
-            "assignmentId": "assignment0",
-            "status": "complete",
-            "repo": "https://api.github.com/repos/drdreed/articles",
-            "uid": "E0A04Y6VVmYntLCuHS9ZzwX48c52"
-        }
+    "assignment2" : {
+      "dueDate" : "2016-12-03T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Blog page styling",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ARTICLE_STYLES.md"
     },
-    "users": {
-        "user0": {
-            "role": ["admin", "instructor"],
-            "uid": "pKAVxdXwhnT3pMsfFtWPgDGXXzI3",
-            "username": "Dustin Reed"
-        },
-        "user1": {
-            "role": ["student"],
-            "uid": "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
-            "username": "Dustin Reed Student"
-        },
-        "user2": {
-            "role": ["student"],
-            "uid": "E0A04Y6VVmYntLCuHS9ZzwX48c52",
-            "username": "Student Student"
-        }
+    "assignment3" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "CSS validation classes",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_BANKING_VALIDATE.md"
+    },
+    "assignment4" : {
+      "dueDate" : "2016-12-08T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Lambda Expression Calculator",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ADVANCED_FUNCTIONS_CALCULATOR.md"
+    },
+    "assignment5" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Chaining Array Methods",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_CHAINING.md"
+    },
+    "assignment6" : {
+      "dueDate" : "2016-12-03T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Solar System",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_SOLAR_SYSTEM.md"
+    },
+    "assignment7" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "String Manipulation",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_STRING_MANIPULATION.md"
     }
+  },
+  "milestones" : {
+    "milestone0" : {
+      "name" : "Getting Started",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/1-getting-started"
+    },
+    "milestone1" : {
+      "name" : "The Static Web",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/2-the-static-web"
+    },
+    "milestone2" : {
+      "name" : "Single Page Applications",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/3-single-page-applications"
+    }
+  },
+  "studentAssignments" : {
+    "studentassignment0" : {
+      "assignmentId" : "assignment0",
+      "repo" : "https://api.github.com/repos/drdreed/acme-explosives",
+      "status" : "complete",
+      "uid" : "UeB12qFhqrXFdVhFeFDv5nxBv5T2"
+    },
+    "studentassignment1" : {
+      "assignmentId" : "assignment0",
+      "repo" : "https://api.github.com/repos/drdreed/articles",
+      "status" : "complete",
+      "uid" : "E0A04Y6VVmYntLCuHS9ZzwX48c52"
+    },
+    "studentassignment2" : {
+      "assignmentId" : "assignment0",
+      "repo" : "https://api.github.com/repos/drdreed/articles",
+      "status" : "complete",
+      "uid" : "pKAVxdXwhnT3pMsfFtWPgDGXXzI3"
+    }
+  },
+  "users" : {
+    "user0" : {
+      "githubUsername" : "drdreed",
+      "role" : [ "admin", "instructor" ],
+      "uid" : "pKAVxdXwhnT3pMsfFtWPgDGXXzI3",
+      "username" : "Dustin Reed"
+    },
+    "user1" : {
+      "githubUsername" : "drdreed",
+      "role" : [ "student" ],
+      "uid" : "UeB12qFhqrXFdVhFeFDv5nxBv5T2",
+      "username" : "Dustin Reed Student"
+    },
+    "user2" : {
+      "githubUsername" : "justinal64",
+      "role" : [ "student" ],
+      "uid" : "E0A04Y6VVmYntLCuHS9ZzwX48c52",
+      "username" : "Justin Leggett"
+    }
+  }
 }
