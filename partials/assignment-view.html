@@ -23,12 +23,12 @@
     <button class="btn btn-info" ng-show='edit' ng-click="saveStudentAssignment()">Save</button>
 </div>
 <div class="row" ng-if="user.role.includes('admin')">
-    <h1 ng-hide='edit'>Assignment: {{selectedAssignment.name}}</h1>
+    <h3 ng-hide='edit'>Assignment: {{selectedAssignment.name}}</h3>
     <div input-field ng-show='edit'>
         <input type="text" ng-model="selectedAssignment.name" value={{selectedAssignment.name}} length="150">
         <label>Assignment</label>
     </div>
-    <h3 ng-hide='edit'>Due Date: {{selectedAssignment.dueDate | date}}</h3>
+    <h4 ng-hide='edit'>Due Date: {{selectedAssignment.dueDate | date}}</h4>
     <div input-field ng-show='edit'>
         <label for="dueDate">Due Date</label>
         <input input-date type="text" name="dueDate" id="dueDate" ng-model="selectedAssignment.dueDate" container="" format="mm/dd/yyyy"

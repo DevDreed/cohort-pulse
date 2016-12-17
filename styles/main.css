@@ -6423,3 +6423,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 #login-container {
   margin-top: 50px; }
+
+.assignment-contents {
+  background: #565f86; }
