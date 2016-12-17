@@ -49,7 +49,7 @@
             <div class="collapsible-header"><i class="{{single.icon}}"></i>
                 <div class="col s4">{{studentAssignment.user.username}}</div>
                 <div class="col s4">{{studentAssignment.status}}</div>
-                <div class="col s4"><a href={{studentAssignment.fullRepo.html_url}} ng-if="studentAssignment.status === 'complete'" target="blank">{{studentAssignment.fullRepo.name}}</a></div>
+                <div class="col s4"><a href={{studentAssignment.fullRepo.html_url}} target="blank">{{studentAssignment.fullRepo.name}}</a></div>
             </div>
             <div class="collapsible-body">
                 <div>Created: {{studentAssignment.fullRepo.created_at | date}}</div>

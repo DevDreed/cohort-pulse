@@ -1,9 +1,19 @@
 @import "materialize";
 
+.brand-logo {
+    img {
+        height: 60px;
+    }    
+}
+
 #login-container {
     margin-top: 50px;
 }
 
 .assignment-contents {
     background: #565f86;
+}
+
+.collapsible-body {
+    padding: 15px;
 }

@@ -7,13 +7,13 @@
         <form ng-show="loginContainer">
             <div class="row">
                 <div class="input-field">
-                    <input type="email" class="validate" ng-model="login.email" required autofocus>
+                    <input type="email" class="validate" ng-model="login.email" ng-keyup="$event.keyCode == 13 && loginUser(login)" required autofocus>
                     <label>Email Address</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field">
-                    <input type="password" class="validate" ng-model="login.password" required autofocus>
+                    <input type="password" class="validate" ng-model="login.password" ng-keyup="$event.keyCode == 13 && loginUser(login)" required autofocus>
                     <label>Password</label>
                 </div>
             </div>

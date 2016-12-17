@@ -3267,12 +3267,12 @@ small {
   padding: 20px;
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
-  background-color: #d3d3d3; }
+  background-color: #efefef; }
 
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #d3d3d3;
+  background-color: #efefef;
   transition: box-shadow .25s;
   border-radius: 2px; }
   .card .card-title {
@@ -3339,7 +3339,7 @@ small {
       bottom: 0;
       width: 100%; }
     .card .card-image .card-title {
-      color: #d3d3d3;
+      color: #efefef;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -3358,16 +3358,16 @@ small {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-      color: #ffab40;
+      color: #388E3C;
       margin-right: 20px;
       transition: color .3s ease;
       text-transform: uppercase; }
       .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-        color: #ffd8a6; }
+        color: #68c46d; }
   .card .card-reveal {
     padding: 20px;
     position: absolute;
-    background-color: #d3d3d3;
+    background-color: #efefef;
     width: 100%;
     overflow-y: auto;
     left: 0;
@@ -6421,8 +6421,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+.brand-logo img {
+  height: 60px; }
+
 #login-container {
   margin-top: 50px; }
 
 .assignment-contents {
   background: #565f86; }
+
+.collapsible-body {
+  padding: 15px; }
