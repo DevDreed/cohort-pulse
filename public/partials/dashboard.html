@@ -1,0 +1,35 @@
+<div class="row">
+    <h3>Milestones</h3>
+</div>
+<div class="row">
+    <div class="col s12">
+        <div class="row" ng-repeat="milestone in milestones | filter: searchText">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content black-text">
+                        <span class="card-title">{{milestone.name}}</span>
+                        <div class="container z-depth-1 assignment-contents">
+                            <div class="center-align">Assignments</div>
+                            <ul class="collapsible" data-collapsible="accordion" watch>
+                                <li ng-repeat="assignment in milestone.assignments">
+                                    <div class="collapsible-header"><i class="{{single.icon}}"></i>
+                                        <div class="col s12">{{assignment.name}} - Due Date: {{assignment.dueDate | date}}</div>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <a href="#/assignment/view/{{assignment.id}}">View Assignment Details</a>
+                                        <div>
+                                            <a href={{assignment.repoLink}} target="blank">Link to Assignment Repo</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href={{milestone.repoLink}} target="blank">Link to Milestone Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

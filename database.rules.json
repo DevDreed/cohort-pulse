@@ -1,0 +1,24 @@
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true",
+    "milestones": {
+      ".indexOn": "uid"
+    },
+    "users": {
+      ".indexOn": "uid"
+    },
+    "assignments": {
+      ".indexOn": [
+        "uid",
+        "milestoneId"
+      ]
+    },
+    "studentAssignments": {
+      ".indexOn": [
+        "uid",
+        "assignmentId"
+      ]
+    }
+  }
+}

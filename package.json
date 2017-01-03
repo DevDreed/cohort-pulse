@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
@@ -21,7 +22,6 @@
     "angular": "1.5.8",
     "angular-materialize": "^0.2.1",
     "angular-route": "1.5.8",
-    "bootstrap": "^3.3.7",
     "jquery": "^3.1.1"
   }
 }
