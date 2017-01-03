@@ -1,0 +1,67 @@
+<div class="row" ng-if="user.role.includes('student')">
+    <h3>Assignment: {{selectedAssignment.name}}</h3>
+    <button class="btn btn-info" ng-show="user.role.includes('admin')"><a ng-href="#/assignment/edit/{{selectedAssignment.id}}">Edit</a></button>
+    <h4>Due Date: {{selectedAssignment.dueDate | date}}</h4>
+    <button class="btn btn-info" ng-hide='edit' ng-click="toggleEdit()">Edit</button>
+    <button class="btn btn-info" ng-hide='edit' ng-click="deleteAssignment(selectedAssignment)">Delete</button>
+    <div ng-hide='edit'>Student Repo Link: {{singleStudentAssignment.fullRepo.name}}</div>
+    <div ng-show='edit'>Student Repo Link:
+        <div input-field>
+            <select class="" ng-model="singleStudentAssignment.repo" material-select watch>
+                <option ng-repeat="repo in userRepos" value="{{repo.url}}">{{repo.name}}</option>
+             </select>
+        </div>
+    </div>
+    <div ng-hide='edit'>Status: {{singleStudentAssignment.status}}</div>
+    <div ng-show='edit'>Student Repo Link:
+        <div input-field>
+            <select class="" ng-model="singleStudentAssignment.status" material-select watch>
+                <option value="incomplete">incomplete</option>
+            <option value="complete">complete</option>
+             </select>
+        </div>
+    </div>
+    <button class="btn btn-info" ng-show='edit' ng-click="saveStudentAssignment()">Save</button>
+    <button class="btn btn-info" ng-show='edit' ng-click="toggleEdit()">Cancel</button>
+</div>
+<div class="row" ng-if="user.role.includes('admin')">
+    <h3 ng-hide='edit'>Assignment: {{selectedAssignment.name}}</h3>
+    <div input-field ng-show='edit'>
+        <input type="text" ng-model="selectedAssignment.name" value={{selectedAssignment.name}} length="150">
+        <label>Assignment</label>
+    </div>
+    <h4 ng-hide='edit'>Due Date: {{selectedAssignment.dueDate | date}}</h4>
+    <div input-field ng-show='edit'>
+        <label for="dueDate">Due Date</label>
+        <input input-date type="text" name="dueDate" id="dueDate" ng-model="selectedAssignment.dueDate" container="" format="mm/dd/yyyy"
+            months-full="{{ month }}" months-short="{{ monthShort }}" weekdays-full="{{ weekdaysFull }}" weekdays-short="{{ weekdaysShort }}"
+            weekdays-letter="{{ weekdaysLetter }}" disable="disable" min="{{ minDate }}" max="{{ maxDate }}" today="today" first-day="1"
+            clear="clear" close="close" select-years="15" on-start="onStart()" on-render="onRender()" on-open="onOpen()" on-close="onClose()"
+            on-set="onSet()" on-stop="onStop()" />
+    </div>
+    <button class="btn btn-info" ng-hide='edit' ng-click="toggleEdit()">Edit</button>
+    <button class="btn btn-info" ng-show='edit' ng-click="saveAssignment()">Save</button>
+    <div class="row">
+        <div class="col s4 center-align">Student</div>
+        <div class="col s4 center-align">Status</div>
+        <div class="col s4 center-align">Repo</div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion" watch>
+        <li ng-repeat="studentAssignment in allStudentAssignments">
+            <div class="collapsible-header"><i class="{{single.icon}}"></i>
+                <div class="col s4">{{studentAssignment.user.username}}</div>
+                <div class="col s4">{{studentAssignment.status}}</div>
+                <div class="col s4"><a href={{studentAssignment.fullRepo.html_url}} target="blank">{{studentAssignment.fullRepo.name}}</a></div>
+            </div>
+            <div class="collapsible-body">
+                <div>Created: {{studentAssignment.fullRepo.created_at | date}}</div>
+                <div>Updated: {{studentAssignment.fullRepo.updated_at | date}}</div>
+                <div>Language: {{studentAssignment.fullRepo.language}}</div>
+                <div>URL: <a href={{studentAssignment.fullRepo.html_url}} target="blank">{{studentAssignment.fullRepo.html_url}}</a></div>
+                <div class="chip">
+                    Issues {{studentAssignment.fullRepo.open_issues_count}}
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

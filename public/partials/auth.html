@@ -1,0 +1,58 @@
+<div class=" col s6 offset-s3" id="login-container">
+    <div class="row">
+        <button class="btn btn-info col s6" ng-click="setLoginContainer()">Login</button>
+        <button class="btn btn-success col s6" ng-click="setRegisterContainer()">Register</button>
+    </div>
+    <div class="row col s10 offset-s1">
+        <form ng-show="loginContainer">
+            <div class="row">
+                <div class="input-field">
+                    <input type="email" class="validate" ng-model="login.email" ng-keyup="$event.keyCode == 13 && loginUser(login)" required autofocus>
+                    <label>Email Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input type="password" class="validate" ng-model="login.password" ng-keyup="$event.keyCode == 13 && loginUser(login)" required autofocus>
+                    <label>Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field center-align">
+                    <a class="btn btn-lg btn-info validate" ng-click="loginUser(login)">Submit Login</a>
+                </div>
+            </div>
+        </form>
+        <form ng-show="registerContainer">
+            <div class="row">
+                <div class="input-field">
+                    <input type="email" class="validate" ng-model="register.email" required autofocus>
+                    <label>Email Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input type="password" class="validate" ng-model="register.password" required autofocus>
+                    <label>Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input type="text" class="validate" ng-model="register.username" required autofocus>
+                    <label>Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field">
+                    <input type="text" class="validate" ng-model="register.githubUsername" required autofocus>
+                    <label>Github Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field center-align">
+                    <a class="btn btn-lg btn-success" ng-click="registerUser(register)">Submit Registration</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
