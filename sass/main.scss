@@ -11,7 +11,24 @@
 }
 
 .assignment-contents {
-    background: #565f86;
+    background: $primary-color;
+
+    a {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: $link-color;
+    }
+}
+
+.accordion-header {
+    color: white;
+    padding: 10px;
 }
 
 .collapsible-body {
