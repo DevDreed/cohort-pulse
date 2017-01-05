@@ -6442,3 +6442,31 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .collapsible-body {
   padding: 15px; }
+
+.markdown-body {
+  padding: 20px; }
+
+.success-toast {
+  background-color: green; }
+
+.delete-toast {
+  background-color: red; }
+
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+
+.tabsdemoDynamicHeight md-content md-tabs {
+  background: #f6f6f6;
+  border: 1px solid #e1e1e1; }
+
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+  background: white; }
+
+.tabsdemoDynamicHeight md-content h1:first-child {
+  margin-top: 0; }
+
+.tab-margin {
+  margin-top: 20px; }
+
+.modal {
+  min-height: 700px; }

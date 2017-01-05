@@ -2,6 +2,20 @@
 
 app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
 
+    const getMarkdown = (assignment) => {
+        const repoURL = assignment.repoLink;
+        const reg = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
+        let pathname = reg.exec( repoURL )[1];
+        pathname = pathname.replace('/blob', '');
+        return $q((resolve, reject) => {
+            $http.get(`https://raw.githubusercontent.com${pathname}`).success(response => {
+                console.log('response from readme', response);
+                resolve(response);
+            }).error(errorResponse => reject(errorResponse));
+        });
+    };
+
+
     const getMilestoneList = () => {
         return $q((resolve, reject) => {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/milestones.json`).success(response => {
@@ -151,6 +165,7 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
         getSingleAssignment: getSingleAssignment,
         getAllStudentsAssignments: getAllStudentsAssignments,
         newStudentAssignment: newStudentAssignment,
-        deleteAssignment: deleteAssignment
+        deleteAssignment: deleteAssignment,
+        getMarkdown: getMarkdown
     };
 });
