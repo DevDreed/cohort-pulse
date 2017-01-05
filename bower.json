@@ -1,0 +1,20 @@
+{
+  "name": "cohort-pulse",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Dustin Reed <dmreedy1@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/drdreed/cohort-pulse",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-markdown-directive": "^0.3.1"
+  }
+}

@@ -7,6 +7,7 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
   let assignmentId = $routeParams.id;
   $scope.userRepos = [];
   $scope.githubRepo = {};
+  $scope.markdown = "";
 
   var currentTime = new Date();
   $scope.currentTime = currentTime;
@@ -41,6 +42,8 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
   };
 
 
+
+
   $scope.edit = false;
   $scope.toggleEdit = function () {
     $scope.edit = $scope.edit === false ? true : false;
@@ -49,12 +52,14 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
   $scope.saveAssignment = () => {
     AssignmentFactory.editAssignment($scope.selectedAssignment).then(function (response) {
       $scope.edit = false;
+      Materialize.toast('Assignment Saved!', 4000, "success-toast");
     });
   };
 
   $scope.deleteAssignment = () => {
     AssignmentFactory.deleteAssignment($scope.singleStudentAssignment).then(function (response) {
       $scope.singleStudentAssignment = {};
+      Materialize.toast('Assignment Deleted!', 4000, "delete-toast");
     });
   };
 
@@ -69,6 +74,7 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
           $scope.singleStudentAssignment.fullRepo = repo;
         });
         $scope.edit = false;
+        Materialize.toast('Assignment Saved!', 4000, "success-toast");
       });
     } else {
       AssignmentFactory.newStudentAssignment(assignment).then(function (response) {
@@ -94,6 +100,9 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
     oneAssignment.id = assignmentId;
     $scope.selectedAssignment = oneAssignment;
     $scope.selectedAssignment.dueDate = new Date(oneAssignment.dueDate);
+    AssignmentFactory.getMarkdown(oneAssignment).then( res => {
+      $scope.markdown = res;
+    });
   });
 
   AssignmentFactory.getAllStudentsAssignments(assignmentId).then(allAssignments => {

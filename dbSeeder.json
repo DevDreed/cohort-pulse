@@ -1,5 +1,11 @@
 {
   "assignments" : {
+    "assignment" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone0",
+      "name" : "Command Line Interface (CLI)",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/1-getting-started/COMMAND_LINE.md"
+    },
     "assignment0" : {
       "dueDate" : "2016-12-08T06:00:00.000Z",
       "milestoneId" : "milestone1",
@@ -25,28 +31,406 @@
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_BANKING_VALIDATE.md"
     },
     "assignment4" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Selectors and relationships",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_RELATIONSHIP_SELECTORS.md"
+    },
+    "assignment5" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "The Zen Garden Challenge",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_CSS_ZEN_GARDEN.md"
+    },    
+    "assignment6" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Banking form",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_HTML_BANKING_FORM.md"
+    },
+    "assignment7" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Personal blog page",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_HTML_BLOG.md"
+    },
+    "assignment8" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "The Static Web HTML + CSS",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_HTML_CSS__PRODUCT_CARDS.md"
+    },
+    "assignment9" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Personal bio site",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_HTML_PERSONAL_BIO.md"
+    },
+    "assignment10" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Alpha Stacker",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_ALPHASTACKER.md"
+    },
+    "assignment11" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Boy bands and vegetables",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_BOYBANDS.md"
+    },
+    "assignment12" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Counting Coins",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_COINS.md"
+    },
+    "assignment13" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Temperature converter",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_CONVERTER.md"
+    },
+    "assignment14" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Practicing Iteration",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_FOR.md"
+    },
+    "assignment15" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Student grades",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_GRADES.md"
+    },
+    "assignment16" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Colored reindeer",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_REINDEER.md"
+    },
+    "assignment17" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Sonnet exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_JS_SONNET.md"
+    },
+    "assignment18" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Music History Part 01",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_MUSIC_HISTORY_01.md"
+    },
+    "assignment19" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone1",
+      "name" : "Music History Part 2",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/2-the-static-web/exercises/SW_MUSIC_HISTORY_02.md"
+    },
+    "assignment20" : {
       "dueDate" : "2016-12-08T06:00:00.000Z",
       "milestoneId" : "milestone2",
       "name" : "Lambda Expression Calculator",
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ADVANCED_FUNCTIONS_CALCULATOR.md"
     },
-    "assignment5" : {
+    "assignment21" : {
       "dueDate" : "2016-12-17T06:00:00.000Z",
       "milestoneId" : "milestone2",
       "name" : "Chaining Array Methods",
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_CHAINING.md"
     },
-    "assignment6" : {
+    "assignment22" : {
       "dueDate" : "2016-12-03T06:00:00.000Z",
       "milestoneId" : "milestone2",
       "name" : "Solar System",
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_SOLAR_SYSTEM.md"
     },
-    "assignment7" : {
+    "assignment23" : {
       "dueDate" : "2016-12-17T06:00:00.000Z",
       "milestoneId" : "milestone2",
       "name" : "String Manipulation",
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_ARRAYS_STRING_MANIPULATION.md"
+    },    
+    "assignment24" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Dynamic Cards",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_EVENT_LISTENERS_DYNAMIC_CARDS.md"
+    },
+    "assignment25" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "The Guinea Pig",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_EVENT_LISTENERS_GUINEA_PIG.md"
+    },
+    "assignment26" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "TSA Random Arrow",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_EVENT_LISTENERS_TSA.md"
+    },
+    "assignment27" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "What You See Is What You Get",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_EVENT_LISTENERS_WYSIWYG.md"
+    },
+    "assignment28" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Walk-A-Thon Donations",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_IIFE_BOOTSTRAP.md"
+    },
+    "assignment29" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Sandwich Maker",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_IIFE_SANDWICH.md"
+    },
+    "assignment30" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Language Translator",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_IIFE_TRANSLATOR.md"
+    },
+    "assignment31" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Music History Part 3",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_MUSIC_HISTORY_3.md"
+    },
+    "assignment32" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Music History Part 4",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_MUSIC_HISTORY_4.md"
+    },
+    "assignment33" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Pet Food",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_XHR_FOOD.md"
+    },
+    "assignment34" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "IIFE, XHRs and Callbacks, Oh My",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_XHR_MIND_MELTING.md"
+    },
+    "assignment35" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Seasonal Sales",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_JS_XHR_SEASONAL_SALES.md"
+    },
+    "assignment36" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Very Large Array - Muscle Memory Exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_MM_ARRAYS.md"
+    },
+    "assignment37" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "For The Love Of Loops - Muscle Memory Exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_MM_FOR.md"
+    },
+    "assignment38" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone2",
+      "name" : "Objective Reasoning - Muscle Memory Exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/3-single-page-applications/exercises/SP_MM_OBJECTS.md"
+    },
+    "assignment39" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Music History Part 6",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_BROWSERIFY_MUSIC_HISTORY_6.md"
+    },
+    "assignment40" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Solar System Info with Browserify",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_BROWSERIFY_PLANETS.md"
+    },
+    "assignment41" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Browserify Your Sandwich Maker",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_BROWSERIFY_SANDWICH_MAKER.md"
+    },
+    "assignment42" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Music History Part 5",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_JQUERY_MUSIC_HISTORY_5.md"
+    },
+    "assignment43" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "JQuery Slideshow",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_JQUERY_SLIDESHOW.md"
+    },
+    "assignment44" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Acme Explosives",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_PROMISES_ACME_EXPLOSIVES.md"
+    },
+    "assignment45" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Car Manufactory",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_PROTOTYPAL_CARS.md"
+    },
+    "assignment46" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Basic Employee List",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_PROTOTYPAL_EMPLOYEES.md"
+    },
+    "assignment47" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Pear and Oak Tree Orchard Simulator",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_PROTOTYPAL_TREE_FARM.md"
+    },
+    "assignment48" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Create Your Own Zoo",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_PROTOTYPAL_ZOO.md"
+    },
+    "assignment49" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Writing Math Tests",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_TESTING_MATH.md"
+    },
+    "assignment50" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone3",
+      "name" : "Word Checker Testing",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/4-modern-javascript-developer/exercises/MJ_TESTING_WORD_CHECKER.md"
+    },
+    "assignment51" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Music History 7",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/MUSIC_HISTORY_07.md"
+    },
+    "assignment52" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Music History 8",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/MUSIC_HISTORY_08.md"
+    },
+    "assignment53" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Music History 9",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/MUSIC_HISTORY_09.md"
+    },
+    "assignment54" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Local Weather Application",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/RBA_API_WEATHER_APP.md"
+    },
+    "assignment55" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Battleship",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/RBA_BATTLESHIP.md"
+    },
+    "assignment56" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Family Members",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/RBA_FAMILY_MEMBERS.md"
+    },
+    "assignment57" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone4",
+      "name" : "Best Blog Ever: A Handlebars.js exercise",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/5-rich-browser-applications/exercises/RBA_HANDLEBARS_BLOG.md"
+    },
+    "assignment58" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Mushroom Mania",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_MUSHROOMS.md"
+    },
+    "assignment59" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Mushroom Factory",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_MUSHROOM_FACTORY.md"
+    },
+    "assignment60" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Route Listing",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_ROUTE_LISTING.md"
+    },
+    "assignment61" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Route Routing",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_ROUTE_ROUTING.md"
+    },
+    "assignment62" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "User Notes with Authentication",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_USER_NOTES.md"
+    },
+    "assignment63" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Wide World Travel Guides",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_WIDE_WORLD_TRAVEL.md"
+    },
+    "assignment64" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Wide World Travel Guides",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/MF_WIDE_WORLD_TRAVEL_FACTORY.md"
+    },
+    "assignment65" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Wide World Travel Guides",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/1-basic/WIDE_WORLD_TRAVEL_ROUTING.md"
+    },
+    "assignment66" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Doctors and Patients",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/2-intermediate/MF_DOCTORS_PATIENTS.md"
+    },
+    "assignment67" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Music History",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/2-intermediate/MF_MUSIC_HISTORY.md"
+    },
+    "assignment68" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "National Park Service",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/2-intermediate/MF_NATIONAL_PARKS.md"
+    },
+    "assignment69" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Music History Advanced",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/3-advanced/MF_MUSIC_HISTORY.md"
+    },
+    "assignment70" : {
+      "dueDate" : "2016-12-17T06:00:00.000Z",
+      "milestoneId" : "milestone5",
+      "name" : "Nashville Data",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/blob/master/6-modern-frameworks/exercises/3-advanced/MF_NASHVILLE_CHART.md"
     }
   },
   "milestones" : {
@@ -61,6 +445,18 @@
     "milestone2" : {
       "name" : "Single Page Applications",
       "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/3-single-page-applications"
+    },
+    "milestone3" : {
+      "name" : "Modern JavaScript Developer",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/4-modern-javascript-developer"
+    },
+    "milestone4" : {
+      "name" : "Rich Browser Applications",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/5-rich-browser-applications"
+    },
+    "milestone5" : {
+      "name" : "Modern Front End Frameworks",
+      "repoLink" : "https://github.com/nashville-software-school/front-end-milestones/tree/master/6-modern-frameworks"
     }
   },
   "studentAssignments" : {

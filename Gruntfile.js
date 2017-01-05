@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     jshint: {
       files: ['./js/**/*.js'],
       options: {
-        predef: ["document", "console", "$", "firebase", "FbAPI", "app", "angular"],
+        predef: ["document", "console", "$", "firebase", "FbAPI", "app", "angular", "Materialize"],
         esnext: true,
         globalstrict: true,
         globals: {},
@@ -52,7 +52,13 @@ module.exports = function (grunt) {
             "partials/**/*.html",
             "node_modules/jquery/dist/jquery.min.js",
             "node_modules/angular/angular.min.js",
-            "node_modules/angular-route/angular-route.min.js"
+            "node_modules/angular-route/angular-route.min.js",
+            "bower_components/angular-sanitize/angular-sanitize.min.js ",
+            "bower_components/showdown/compressed/Showdown.min.js",
+            "bower_components/angular-markdown-directive/markdown.js",
+            "bower_components/angular-sanitize/angular-sanitize.min.js",
+            "bower_components/showdown/compressed/Showdown.min.js",
+            "bower_components/angular-markdown-directive/markdown.js",
           ],
           dest: "./public/"
         }]
