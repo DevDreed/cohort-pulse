@@ -1,0 +1,25 @@
+<h3>New Assignment</h3>
+<form>
+    <div class="form-group">
+        <label for="">Assignment Name</label>
+        <input type="text" class="form-control" placeholder="Name" ng-model="newAssignment.name">
+    </div>
+    <div class="form-group">
+        <div input-field>
+            <label for="dueDate">Due Date</label>
+            <input input-date type="text" name="dueDate" id="dueDate" ng-model="newAssignment.dueDate" container="" format="mm/dd/yyyy"
+                months-full="{{ month }}" months-short="{{ monthShort }}" weekdays-full="{{ weekdaysFull }}" weekdays-short="{{ weekdaysShort }}"
+                weekdays-letter="{{ weekdaysLetter }}" today="today" first-day="1" clear="clear" close="close" select-years="15"
+                on-start="onStart()" on-render="onRender()" on-open="onOpen()" on-close="onClose()" on-set="onSet()" on-stop="onStop()"
+            />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="">Repository Link</label>
+        <input type="text" class="form-control" ng-model="newAssignment.repoLink">
+    </div>
+    <div class="section">
+        <a href="/#/dashboard" class="waves-effect waves-light btn btn-cancel btn-margin"><i class="fa fa-ban" aria-hidden="true"></i> Cancel</a>
+        <button type="button" class="waves-effect waves-green btn btn-margin" ng-click="addNewAssignment()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Add</button>
+    </div>
+</form>

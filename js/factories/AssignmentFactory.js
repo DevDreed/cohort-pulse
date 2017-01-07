@@ -5,11 +5,10 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
     const getMarkdown = (assignment) => {
         const repoURL = assignment.repoLink;
         const reg = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
-        let pathname = reg.exec( repoURL )[1];
+        let pathname = reg.exec(repoURL)[1];
         pathname = pathname.replace('/blob', '');
         return $q((resolve, reject) => {
             $http.get(`https://raw.githubusercontent.com${pathname}`).success(response => {
-                console.log('response from readme', response);
                 resolve(response);
             }).error(errorResponse => reject(errorResponse));
         });
@@ -65,6 +64,20 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
         return $q((resolve, reject) => {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/milestones/${milestoneId}.json`)
                 .success(getSingleResponse => resolve(getSingleResponse))
+                .error(errorResponse => reject(errorResponse));
+        });
+    };
+
+    const postNewAssignment = (newAssignment) => {
+        return $q((resolve, reject) => {
+            $http.post(`${FIREBASE_CONFIG.databaseURL}/assignments.json`,
+                    JSON.stringify({
+                        name: newAssignment.name,
+                        dueDate: newAssignment.dueDate,
+                        milestoneId: newAssignment.milestoneId,
+                        repoLink: newAssignment.repoLink
+                    }))
+                .success(postResponse => resolve(postResponse))
                 .error(errorResponse => reject(errorResponse));
         });
     };
@@ -134,6 +147,14 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
 
     const deleteAssignment = (assignment) => {
         return $q((resolve, reject) => {
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/assignments/${assignment.id}.json`)
+                .success(getSingleResponse => resolve(getSingleResponse))
+                .error(errorResponse => reject(errorResponse));
+        });
+    };
+
+    const deleteStudentAssignment = (assignment) => {
+        return $q((resolve, reject) => {
             $http.delete(`${FIREBASE_CONFIG.databaseURL}/studentAssignments/${assignment.id}.json`)
                 .success(getSingleResponse => resolve(getSingleResponse))
                 .error(errorResponse => reject(errorResponse));
@@ -156,16 +177,17 @@ app.factory("AssignmentFactory", ($q, $http, FIREBASE_CONFIG) => {
     };
 
     return {
-        getMilestoneList: getMilestoneList,
         getSingleMilestone: getSingleMilestone,
         getAssignmentListByMilestoneId: getAssignmentListByMilestoneId,
         getStudentAssignmentsByUserId: getStudentAssignmentsByUserId,
+        postNewAssignment: postNewAssignment,
         editAssignment: editAssignment,
         editStudentAssignment: editStudentAssignment,
         getSingleAssignment: getSingleAssignment,
         getAllStudentsAssignments: getAllStudentsAssignments,
         newStudentAssignment: newStudentAssignment,
         deleteAssignment: deleteAssignment,
+        deleteStudentAssignment: deleteStudentAssignment,
         getMarkdown: getMarkdown
     };
 });

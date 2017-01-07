@@ -1,13 +1,13 @@
 "use strict";
 
-app.controller("DashboardCtrl", function ($scope, $rootScope, $location, AssignmentFactory) {
+app.controller("DashboardCtrl", function ($scope, $rootScope, $location, AssignmentFactory, MilestoneFactory) {
 
     $scope.milestones = [];
     $scope.assignments = [];
     $scope.selectedMilestone = {};
 
     let getMilestones = () => {
-        AssignmentFactory.getMilestoneList().then(fbMilestones => {
+        MilestoneFactory.getMilestoneList().then(fbMilestones => {
             $scope.milestones = fbMilestones;
             $scope.milestones.map(milestone => {
                 AssignmentFactory.getAssignmentListByMilestoneId(milestone.id).then(function (fbAssignments) {
@@ -20,7 +20,7 @@ app.controller("DashboardCtrl", function ($scope, $rootScope, $location, Assignm
     getMilestones();
 
     $scope.deleteMilestone = (milestoneId) => {
-        AssignmentFactory.deleteMilestone(milestoneId).then(() => {
+        MilestoneFactory.deleteMilestone(milestoneId).then(() => {
             getMilestones();
         });
     };

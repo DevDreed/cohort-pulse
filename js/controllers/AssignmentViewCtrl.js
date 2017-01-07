@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams, AssignmentFactory, UserFactory, GithubFactory) {
+app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams, $location, AssignmentFactory, UserFactory, GithubFactory) {
   $scope.selectedAssignment = {};
   $scope.singleStudentAssignment = {};
   $scope.allStudentAssignments = [];
@@ -56,8 +56,27 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
     });
   };
 
+  $scope.cancelAssignmentSave = () => {
+    AssignmentFactory.getSingleAssignment(assignmentId).then(oneAssignment => {
+      oneAssignment.id = assignmentId;
+      $scope.selectedAssignment = oneAssignment;
+      $scope.selectedAssignment.dueDate = new Date(oneAssignment.dueDate);
+      AssignmentFactory.getMarkdown(oneAssignment).then(res => {
+        $scope.markdown = res;
+      });
+    });
+  };
+
   $scope.deleteAssignment = () => {
-    AssignmentFactory.deleteAssignment($scope.singleStudentAssignment).then(function (response) {
+    AssignmentFactory.deleteAssignment($scope.selectedAssignment).then(function (response) {
+      $location.url("/dashboard");
+      $scope.singleStudentAssignment = {};
+      Materialize.toast('Assignment Deleted!', 4000, "delete-toast");
+    });
+  };
+
+  $scope.deleteStudentAssignment = () => {
+    AssignmentFactory.deleteStudentAssignment($scope.singleStudentAssignment).then(function (response) {
       $scope.singleStudentAssignment = {};
       Materialize.toast('Assignment Deleted!', 4000, "delete-toast");
     });
@@ -82,9 +101,35 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
           $scope.singleStudentAssignment.fullRepo = repo;
         });
         $scope.edit = false;
+        Materialize.toast('Assignment Saved!', 4000, "success-toast");
       });
     }
 
+  };
+
+  $scope.cancelStudentAssignmentSave = () => {
+    $scope.singleStudentAssignment = {};
+    AssignmentFactory.getAllStudentsAssignments(assignmentId).then(allAssignments => {
+      $scope.allStudentAssignments = allAssignments;
+      allAssignments.map(assignment => {
+        UserFactory.getUser(assignment.uid).then(function (user) {
+          $scope.allStudentAssignments.map((assignment) => {
+            if (user.uid === assignment.uid) {
+              assignment.user = user;
+            }
+            if (assignment.uid === $rootScope.user.uid) {
+              $scope.singleStudentAssignment = assignment;
+              if (assignment.repo !== undefined) {
+                GithubFactory.getRepoByURL(assignment.repo).then(repo => {
+                  assignment.fullRepo = repo;
+                });
+              }
+            }
+          });
+        });
+      });
+    });
+    $scope.edit = false;
   };
 
   GithubFactory.getGithubUser($rootScope.user.githubUsername).then(user => {
@@ -100,7 +145,7 @@ app.controller("AssignmentViewCtrl", function ($scope, $rootScope, $routeParams,
     oneAssignment.id = assignmentId;
     $scope.selectedAssignment = oneAssignment;
     $scope.selectedAssignment.dueDate = new Date(oneAssignment.dueDate);
-    AssignmentFactory.getMarkdown(oneAssignment).then( res => {
+    AssignmentFactory.getMarkdown(oneAssignment).then(res => {
       $scope.markdown = res;
     });
   });

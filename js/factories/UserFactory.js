@@ -6,7 +6,8 @@ app.factory("UserFactory", ($q, $http, FIREBASE_CONFIG) => {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/users.json`, JSON.stringify({
                 uid: authData.uid,
                 username: authData.username,
-                githubUsername: authData.githubUsername
+                githubUsername: authData.githubUsername,
+                role: ['student']
             })).success(storeUserSuccess => {
                 resolve(storeUserSuccess);
             }).error(storeUserError => {
