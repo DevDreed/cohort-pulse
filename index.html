@@ -7,7 +7,7 @@
         <!-- Materialize CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">        
     </head>
 
     <body ng-app="CohortPulseApp" ng-cloak>
@@ -17,7 +17,8 @@
                 <div class="col s12" ng-view></div>
             </div>
         </div>
-
+        
+        <script src="https://use.fontawesome.com/62bbfd5460.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
@@ -37,12 +38,15 @@
         <script type="text/javascript" src="/js/AppConfig.js"></script>
         <script type="text/javascript" src="/js/factories/AuthFactory.js"></script>
         <script type="text/javascript" src="/js/factories/AssignmentFactory.js"></script>
+        <script type="text/javascript" src="/js/factories/MilestoneFactory.js"></script>
         <script type="text/javascript" src="/js/factories/UserFactory.js"></script>
         <script type="text/javascript" src="/js/factories/GithubFactory.js"></script>
         <script type="text/javascript" src="/js/controllers/AuthController.js"></script>
         <script type="text/javascript" src="/js/controllers/NavController.js"></script>
         <script type="text/javascript" src="/js/controllers/DashboardCtrl.js"></script>
-        <script type="text/javascript" src="/js/controllers/AssignmentEditCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/MilestoneNewCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/MilestoneEditCtrl.js"></script>
+        <script type="text/javascript" src="/js/controllers/AssignmentNewCtrl.js"></script>
         <script type="text/javascript" src="/js/controllers/AssignmentViewCtrl.js"></script>
     </body>
 </html>

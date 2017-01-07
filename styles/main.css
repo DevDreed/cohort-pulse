@@ -6424,6 +6424,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .brand-logo img {
   height: 60px; }
 
+.brand-logo:hover {
+  animation: heartbeat 1s infinite; }
+
 #login-container {
   margin-top: 50px; }
 
@@ -6450,7 +6453,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background-color: green; }
 
 .delete-toast {
-  background-color: red; }
+  background-color: #a81522; }
 
 .tabsdemoDynamicHeight md-content {
   background-color: transparent !important; }
@@ -6470,3 +6473,44 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .modal {
   min-height: 700px; }
+
+.btn-cancel {
+  background-color: #3949ab; }
+  .btn-cancel:hover {
+    background-color: #2c3985; }
+
+.btn-delete {
+  background-color: #a81522; }
+  .btn-delete:hover {
+    background-color: #7b0f19; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.btn-margin {
+  margin: 5px !important; }
+
+.inline-h3 {
+  display: inline-block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0;
+  font-weight: 400; }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75); }
+  20% {
+    transform: scale(1); }
+  40% {
+    transform: scale(0.75); }
+  60% {
+    transform: scale(1); }
+  80% {
+    transform: scale(0.75); }
+  100% {
+    transform: scale(0.75); } }

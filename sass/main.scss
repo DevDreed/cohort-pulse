@@ -4,6 +4,10 @@
     img {
         height: 60px;
     }    
+
+    &:hover {
+        animation: heartbeat 1s infinite;
+    }
 }
 
 #login-container {
@@ -44,7 +48,7 @@
 }
 
 .delete-toast {
-    background-color: red;
+    background-color: #a81522;
 }
 
 .tabsdemoDynamicHeight md-content {
@@ -63,4 +67,70 @@
 
 .modal {
     min-height: 700px;
+}
+
+.btn-cancel {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        
+    }
+}
+
+.btn-delete {
+    background-color:#a81522;
+
+    &:hover {
+        background-color: darken(#a81522, 10%);
+        
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn-margin {
+    margin: 5px !important;
+}
+
+.inline-h3 {
+    display: inline-block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-size: 2.92rem;
+    line-height: 110%;
+    margin: 1.46rem 0 1.168rem 0;
+    font-weight: 400;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
 }

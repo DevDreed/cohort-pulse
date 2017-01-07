@@ -35,9 +35,19 @@ app.config($routeProvider => {
             controller: 'DashboardCtrl',
             resolve: {isAuth}
         })
-        .when('/assignment/edit/:id', {
-            templateUrl: 'partials/assignment-edit.html',
-            controller: 'AssignmentEditCtrl',
+        .when('/milestone/new', {
+            templateUrl: 'partials/milestone-new.html',
+            controller: 'MilestoneNewCtrl',
+            resolve: {isAuth}
+        })
+        .when('/milestone/edit/:id', {
+            templateUrl: 'partials/milestone-edit.html',
+            controller: 'MilestoneEditCtrl',
+            resolve: {isAuth}
+        })
+        .when('/milestone/:milestoneId/assignment/new', {
+            templateUrl: 'partials/assignment-new.html',
+            controller: 'AssignmentNewCtrl',
             resolve: {isAuth}
         })
         .when('/assignment/view/:id', {

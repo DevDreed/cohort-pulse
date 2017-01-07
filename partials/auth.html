@@ -1,10 +1,9 @@
-<div class=" col s6 offset-s3" id="login-container">
-    <div class="row">
-        <button class="btn btn-info col s6" ng-click="setLoginContainer()">Login</button>
-        <button class="btn btn-success col s6" ng-click="setRegisterContainer()">Register</button>
-    </div>
+<div class=" col s6 offset-s3 z-depth-3" id="login-container">
     <div class="row col s10 offset-s1">
         <form ng-show="loginContainer">
+            <div class="row">
+                <h3 class="center-align">Login</h3>
+            </div>
             <div class="row">
                 <div class="input-field">
                     <input type="email" class="validate" ng-model="login.email" ng-keyup="$event.keyCode == 13 && loginUser(login)" required autofocus>
@@ -19,11 +18,18 @@
             </div>
             <div class="row">
                 <div class="input-field center-align">
-                    <a class="btn btn-lg btn-info validate" ng-click="loginUser(login)">Submit Login</a>
+                    <a class="btn btn-lg btn-info validate" ng-click="loginUser(login)">Submit</a>
                 </div>
             </div>
+            <div class="row">
+                <a class="pull-right cursor-pointer" ng-click="setRegisterContainer()">Register</a>
+            </div>
         </form>
+
         <form ng-show="registerContainer">
+            <div class="row">
+                <h3 class="center-align">Register</h3>
+            </div>
             <div class="row">
                 <div class="input-field">
                     <input type="email" class="validate" ng-model="register.email" required autofocus>
@@ -50,8 +56,11 @@
             </div>
             <div class="row">
                 <div class="input-field center-align">
-                    <a class="btn btn-lg btn-success" ng-click="registerUser(register)">Submit Registration</a>
+                    <a class="btn btn-lg btn-success" ng-click="registerUser(register)">Submit</a>
                 </div>
+            </div>
+            <div class="row">
+                <a class="pull-right cursor-pointer" ng-click="setLoginContainer()">Login</a>
             </div>
         </form>
     </div>
